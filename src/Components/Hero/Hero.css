@@ -147,23 +147,17 @@
   background-color: #b30000;
 }
 
-.app-download {
-  background-color: #f0e6ff;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-}
-
 .app-download h2 {
   color: #4a148c;
   margin-bottom: 1rem;
 }
 
-.store-buttons {
+.store-buttons img {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  max-width: 100%;
 }
 
 .store-badge {

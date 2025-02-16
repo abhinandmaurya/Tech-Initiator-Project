@@ -1,8 +1,8 @@
 import React from "react";
-import { User } from "lucide-react";
 import "./Hero.css";
 import logo from "../../assets/avatar.png";
 import banner from "../../assets/banner.jpg";
+import appImage from "../../assets/appImage.png";
 
 const Hero = () => {
   return (
@@ -72,18 +72,8 @@ const Hero = () => {
           <button className="register-button">Register A Student</button>
 
           <div className="app-download">
-            <h2>DOWNLOAD THE APP</h2>
             <div className="store-buttons">
-              <img
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                alt="Get it on Google Play"
-                className="store-badge"
-              />
-              <img
-                src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
-                alt="Download on the App Store"
-                className="store-badge"
-              />
+              <img src={appImage} alt="" />
             </div>
           </div>
 

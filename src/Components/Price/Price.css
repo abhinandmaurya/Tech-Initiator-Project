@@ -1,0 +1,121 @@
+.prize-container {
+  margin: 2rem auto;
+  padding: 30px 180px;
+  background-color: rgb(255, 237, 221);
+  border-radius: 1rem;
+}
+
+.prize-title {
+  color: #2a1647;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.prizes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.prize-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.prize-icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.prize-icon.active {
+  background-color: #e6f7ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prize-emoji {
+  font-size: 2rem;
+}
+
+.prize-amount {
+  font-size: 0.875rem;
+  color: #666;
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.won-badge,
+.next-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.won-badge {
+  background-color: #ffd700;
+  color: #2a1647;
+}
+
+.next-badge {
+  background-color: #e0e0e0;
+  color: #666;
+}
+
+.progress-container {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.progress-bar {
+  position: relative;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #9c27b0, #673ab7);
+  transition: width 0.3s ease;
+}
+
+.progress-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gift-icon {
+  color: #9c27b0;
+}

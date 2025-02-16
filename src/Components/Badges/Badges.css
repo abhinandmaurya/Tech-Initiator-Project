@@ -1,0 +1,129 @@
+.badges-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: start;
+}
+
+.badges-title {
+  color: #2d1b69;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.badges-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #2d1b69;
+  margin: 0.5rem auto;
+}
+
+.badges-description {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #2d1b69;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.badges-description p {
+  margin-bottom: 0.5rem;
+}
+
+.badge-case {
+  background: linear-gradient(135deg, #9b7aea, #6b46c1);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.case-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badges-display {
+  position: relative;
+  padding: 2rem;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem 0;
+}
+
+.shelf {
+  height: 20px;
+  background: linear-gradient(to right, #8b4513, #a0522d);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.shelf::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.badge {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.badge-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-icon {
+  width: 160px;
+  height: auto;
+  color: white;
+  padding: 10px;
+}
+
+.badge-count {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background: #e53e3e;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
