@@ -25,7 +25,7 @@
 
 .search-container {
   position: relative;
-  width: 300px;
+  width: 600px;
 }
 
 .search-icon {
@@ -41,10 +41,13 @@
   padding: 10px 10px 10px 40px;
   background-color: #4a2d8f;
   color: white;
-  border: 1px solid wheat;
+  border: 2px solid #fff;
   border-radius: 5px;
 }
-
+.search-input:active {
+  background: white;
+  color: black;
+}
 .search-input:focus {
   outline: none;
 }
