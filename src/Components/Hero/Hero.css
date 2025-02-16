@@ -1,0 +1,220 @@
+.banner {
+  max-width: 100%;
+  padding-top: 15px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 20px 160px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-section {
+  text-align: center;
+}
+.user {
+  width: 220px;
+}
+.avatar-container {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  color: #4a148c;
+}
+
+.share-info {
+  margin: 1rem 0;
+}
+
+.share-text {
+  color: #4a148c;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.star-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.star {
+  font-size: 4rem;
+}
+
+.share-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.time-text {
+  color: #4a148c;
+  font-weight: 500;
+}
+
+.challenge-text {
+  color: #4a148c;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.middle-section {
+  padding: 2rem;
+  border-radius: 12px;
+}
+.middle-section h1 {
+  color: #4a148c;
+  padding: 10px;
+}
+.teacher-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.teacher-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teacher-details h2 {
+  color: #4a148c;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.teacher-details p {
+  color: #666;
+  margin: 0.25rem 0 0 0;
+}
+
+.event-description {
+  color: #333;
+  line-height: 1.6;
+}
+
+.goal-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.goal-text {
+  color: #4a148c;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.register-button {
+  background-color: #cc0000;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #b30000;
+}
+
+.app-download {
+  background-color: #f0e6ff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.app-download h2 {
+  color: #4a148c;
+  margin-bottom: 1rem;
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.store-badge {
+  height: 40px;
+  cursor: pointer;
+}
+
+.progress-section {
+  text-align: center;
+}
+
+.progress-section h2 {
+  color: #4a148c;
+  margin-bottom: 1rem;
+}
+
+.basketball-court {
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backboard {
+  width: 100px;
+  height: 70px;
+  background-color: #fff;
+  border: 4px solid #4a148c;
+  position: relative;
+}
+
+.backboard::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 30px;
+  background-color: #4a148c;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: #ff6b00;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #cc5500;
+}
