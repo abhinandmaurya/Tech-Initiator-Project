@@ -46,7 +46,7 @@
 }
 
 .prize-emoji {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .prize-amount {
@@ -87,9 +87,9 @@
 
 .progress-bar {
   position: relative;
-  height: 8px;
+  height: 15px;
   background-color: #f0f0f0;
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
