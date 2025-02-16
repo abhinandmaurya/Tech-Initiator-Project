@@ -6,6 +6,7 @@ import Price from "./Components/Price/Price";
 import Badges from "./Components/Badges/Badges";
 import Footer from "./Components/Footer/Footer";
 import Sponsors from "./Components/Sponsors/Sponsors";
+import Leaderboard from "./Components/Leaderboards/Leaderboards";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Price />
       <Badges />
       <Sponsors />
+      <Leaderboard />
       <Footer />
     </>
   );
