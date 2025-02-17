@@ -1,214 +1,525 @@
-.banner {
-  max-width: 100%;
-  padding-top: 15px;
-}
-
 .hero-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 20px 160px;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.hero-title {
+  color: #673ab7;
+  text-align: start;
 }
 
-.left-section {
+/* Left Side Styling */
+.hero-left {
+  flex: 1;
+  padding: 20px 30px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eaeaea;
+}
+
+/* Avatar and sharing section */
+.avatar-section {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.avatar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.profile-section {
-  text-align: center;
-}
-.user {
-  width: 220px;
-}
-.avatar-container {
-  padding: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 20px;
+  width: 120px;
 }
 
 .avatar {
-  color: #4a148c;
-}
-
-.share-info {
-  margin: 1rem 0;
-}
-
-.share-text {
-  color: #4a148c;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.star-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
-}
-
-.star {
-  font-size: 4rem;
-}
-
-.share-count {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4a148c;
-}
-
-.time-text {
-  color: #4a148c;
-  font-weight: 500;
-}
-
-.challenge-text {
-  color: #4a148c;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.middle-section {
-  padding: 2rem;
-  border-radius: 12px;
-}
-.middle-section h1 {
-  color: #4a148c;
-  padding: 10px;
-}
-.teacher-info {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.teacher-avatar {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  margin-bottom: 10px;
   object-fit: cover;
 }
 
-.teacher-details h2 {
-  color: #4a148c;
-  margin: 0;
-  font-size: 1.5rem;
+.avatar-text {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
 }
 
-.teacher-details p {
-  color: #666;
-  margin: 0.25rem 0 0 0;
-}
-
-.event-description {
-  color: #333;
-  line-height: 1.6;
-}
-
-.goal-section {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #eee;
-}
-
-.goal-text {
-  color: #4a148c;
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.right-section {
+.star-time {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.register-button {
-  background-color: #cc0000;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.register-button:hover {
-  background-color: #b30000;
-}
-
-.app-download h2 {
-  color: #4a148c;
-  margin-bottom: 1rem;
-}
-
-.store-buttons img {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   align-items: center;
-  max-width: 100%;
+  justify-content: center;
+  margin-top: 5px;
 }
 
-.store-badge {
-  height: 40px;
-  cursor: pointer;
+.star {
+  color: #ffc107;
+  margin-right: 5px;
+  font-size: 1.2rem;
 }
 
-.progress-section {
+.sharing-instruction {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #673ab7;
+  line-height: 1.4;
+  padding-top: 15px;
+}
+
+/* Teacher profile styling */
+.teacher-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.profile-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-title {
+  margin: 0 0 5px 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.school-title {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.subtitle {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+/* Fundraiser information styling */
+.fundraiser-info {
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.fundraiser-info p {
+  margin-bottom: 15px;
+}
+
+.goal-statement {
+  font-weight: 600;
+}
+
+/* Event timeline styling */
+.event-timeline-section {
+  margin-bottom: 40px;
+}
+
+.timeline-title {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-title:after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-left: 15px;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-events {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.event {
+  text-align: center;
+  width: 70px;
+}
+
+/* Event icons styling */
+.event-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.kickoff-icon {
+  background-color: #ffa726;
+  background-image: url("../../assets/kickoff-icon.png");
+}
+
+.giveaway-icon {
+  background-color: #4caf50;
+  background-image: url("../../assets/giveaway-icon.png");
+}
+
+.graduation-icon {
+  background-color: #2196f3;
+  background-image: url("../../assets/graduation-icon.png");
+}
+
+.donation-icon {
+  background-color: #f44336;
+  background-image: url("../../assets/donation-icon.png");
+}
+
+.event-name {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: #333;
+  line-height: 1.2;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-date {
+  font-size: 0.75rem;
+  color: #666;
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.timeline-progress {
+  position: relative;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 15px;
+  overflow: visible;
+}
+
+.progress-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/progress-ball.png");
+  background-size: contain;
+  left: 0;
+  top: -10px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 20%;
+  background-color: #673ab7;
+  border-radius: 4px;
+}
+
+/* Concluding info section */
+.concluding-info {
+  display: flex;
+  margin-top: 30px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 30px;
+}
+
+.school-logo {
+  flex: 0 0 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.school-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.school-info h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.school-info p {
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.fundraising-message {
+  margin: 15px 0;
+}
+
+.fundraising-stats {
+  margin-top: 25px;
+}
+
+.amount-raised h3 {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-left: 5px;
+  color: #666;
+}
+
+.progress-bar-container {
+  position: relative;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: visible;
+  margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #673ab7;
+  border-radius: 4px;
+}
+
+.percentage {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Right Side Styling */
+.hero-right {
+  flex: 1;
+  max-width: 50%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.hero-btn {
+  background: red;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 20px 60px;
+  margin: 20px 120px;
+}
+
+/* App showcase styling */
+.app-showcase {
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.progress-section h2 {
-  color: #4a148c;
-  margin-bottom: 1rem;
+.app-heading h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
-.basketball-court {
+.app-visual {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.app-screens {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.play-store-button img,
+.app-store-button img {
+  height: 40px;
+}
+
+/* Status sections styling */
+.status-sections {
+  padding: 15px;
+}
+
+.status-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.status-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #673ab7;
+  font-size: 1.1rem;
+}
+
+.status-app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Donation status styling */
+.donation-status {
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.basketball-graphic {
   position: relative;
-  height: 200px;
+  height: 150px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.backboard {
-  width: 100px;
-  height: 70px;
-  background-color: #fff;
-  border: 4px solid #4a148c;
-  position: relative;
+.hoop-image {
+  max-height: 150px;
+  max-width: 100%;
 }
 
-.backboard::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 30px;
-  background-color: #4a148c;
+.donation-progress h3 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #333;
 }
 
-.ball {
-  width: 40px;
-  height: 40px;
-  background-color: #ff6b00;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid #cc5500;
+.donate-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.donate-button:hover {
+  background-color: #43a047;
+}
+
+.heart-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-left,
+  .hero-right {
+    max-width: 100%;
+  }
+
+  .hero-left {
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+@media (max-width: 768px) {
+  .avatar-section,
+  .concluding-info {
+    flex-direction: column;
+  }
+
+  .avatar-container,
+  .school-logo {
+    margin-bottom: 15px;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+
+  .timeline-events {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .event {
+    min-width: 80px;
+    margin-right: 15px;
+  }
+
+  .event:last-child {
+    margin-right: 0;
+  }
 }
